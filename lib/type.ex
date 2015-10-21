@@ -1,0 +1,3 @@
+defmodule Type do
+
+end
