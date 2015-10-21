@@ -7,7 +7,17 @@ defmodule Type.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: "A module for checking the type of an argument",
+     package: package,
      deps: deps]
+  end
+
+  def package do
+    [
+      maintainers: ["Jeffrey Baird"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/jeffreybaird/type"}
+    ]
   end
 
   # Configuration for the OTP application
