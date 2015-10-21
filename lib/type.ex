@@ -1,4 +1,11 @@
 defmodule Type do
+  @doc """
+  Returns the a string representation of the type of a passed argument
+
+  ## Example
+  iex> Type.check(:hello_world)
+  'Atom'
+  """
   @spec check(any()) :: char_list
   def check(arg), do: _check(arg)
   defp _check(arg) when is_nil(arg), do: 'Nil'
