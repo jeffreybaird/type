@@ -39,12 +39,12 @@ defmodule TypeTest do
   end
 
   test "nil" do
-    assert Type.check(&(&1+1)) == 'Nil'
+    assert Type.check(nil) == 'Nil'
   end
 
   test "is pid" do
     pid = Process.spawn(Type, :check, ["hi"],[])
-    assert Type.check(pid) == 'PID'
+    assert Type.check(pid) == 'Pid'
   end
 
   test "is port" do
