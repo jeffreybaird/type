@@ -17,7 +17,6 @@ defmodule Type do
   defp _check(arg) when is_float(arg), do: 'Float'
   defp _check(arg) when is_function(arg), do: 'Function'
   defp _check(arg) when is_integer(arg), do: 'Integer'
-  defp _check(arg) when is_number(arg), do: 'Number'
   defp _check(arg) when is_pid(arg), do: 'Pid'
   defp _check(arg) when is_port(arg), do: 'Port'
   defp _check(arg) when is_reference(arg), do: 'Reference'
