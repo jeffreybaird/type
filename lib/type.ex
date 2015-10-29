@@ -1,6 +1,6 @@
 defmodule Type do
   @doc """
-  Returns the a string representation of the type of a passed argument
+  Returns  a string representation of the type of a passed argument
 
   ## Example
   iex> Type.check(:hello_world)
